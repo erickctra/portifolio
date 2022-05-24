@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-    height: 80vh;
+    height: 90vh;
 
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ body {
     line-height: 1.4;
     font-weight: 400;
 
-    margin: 0 10% 0 10%;
+    margin: 0 8% 0 8%;
 }
 
 .main h1 span {
@@ -43,7 +43,7 @@ body {
 }
 
 .intro .description {
-    padding: 4rem 10%;
+    padding: 4rem 8%;
 }
 
 .intro .description h2 {
@@ -57,7 +57,7 @@ body {
 }
 
 .intro .description > div {
-    margin-top: 10%;
+    margin-top: 8%;
     display: flex;
     flex-direction: column;
 }
@@ -79,8 +79,7 @@ body {
 */
 
 .techs {
-    height: 100vh;
-    padding: 4rem 10%;
+    padding: 8%;
     box-sizing: border-box;
 
 }
@@ -110,7 +109,64 @@ body {
 
 }
 
-@media (min-width: 700px) {
+.projects {
+    height: 100vh;
+    background-color: #e7e5ea;
+
+    box-sizing: border-box;
+
+    padding: 20% 8%;
+}
+
+.projects .item {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.projects .item > img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 500px;
+
+    background: #a1a1a1;
+    border-radius: 7px;
+}
+
+
+.projects .item div h1 {
+
+    font-family: 'Work Sans';
+    font-weight: 400;
+
+    font-size: calc(.9rem + 1vw);
+}
+
+.projects .item div a {
+    display: flex;
+
+
+    font-family: 'Work Sans';
+    font-size: calc(.9rem + 1vw);
+    text-decoration: none;
+
+    color: rgb(3, 42, 233);
+}
+
+.projects .item div a img {
+    margin-top: 4px;
+    width: calc(.9rem + 1vw);
+}
+
+
+@media (min-width: 860px) {
+
+    .main h1 {
+        font-size: calc(2.2rem + 1vw);
+    }
+
     .intro {
         flex-direction: row;
     }
@@ -124,15 +180,41 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 4rem 5% 10% 10%;
+        padding: 8% 5% 8% 8%;
     }
 
-    .intro .description h2 {
-        max
-    }
 
     .intro .description h2,
-    .intro .description > div a {
-        font-size: calc(.8rem + 1vw);
+    .intro .description div a {
+        font-size: calc(.7rem + 1vw);
+        margin: 0;
+    }
+
+    .projects {
+        height: 100vh;
+        background-color: #e7e5ea;
+    
+        box-sizing: border-box;
+    
+        padding: 8%;
+    }
+
+    .projects .item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projects .item > img {
+        width: 40%;
+        height: 100%;
+        max-width: 400px;
+        max-height: 600px;
+    
+        background: #a1a1a1;
+        border-radius: 7px;
+    }
+    
+    .projects .item div {
+        margin-left: 8%;
     }
 }
